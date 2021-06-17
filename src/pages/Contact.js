@@ -18,8 +18,8 @@ const Contact = () => {
                     <div className="address">
                         <div className="content">
                             <h4>adresse</h4>
-                            <p>Rue de Rue</p>
-                            <p>123456</p>
+                            <p>Liège</p>
+                            <p>4000</p>
                         </div>
                     </div>
                     <div className="phone">
@@ -28,23 +28,23 @@ const Contact = () => {
                             <CopyToClipboard text ="0123456789" className="hover">
                                 <p style={{cursor: 'pointer'}} className="clipboard" onClick={() => {
                                     alert("Téléphone copié !")
-                                }}>06 02 02 02 02</p>
+                                }}>0465 790 799</p>
                             </CopyToClipboard>
                         </div>
                     </div>
                     <div className="email">
                         <div className="content">
                             <h4>Email</h4>
-                            <CopyToClipboard text="zaagency@gmail.com" className="hover">
+                            <CopyToClipboard text="zena.alsibaai@gmail.com" className="hover">
                                 <p style={{cursor: "pointer"}} className="clipboard" onClick={() => {
                                 alert("Email copié !")
-                            }}>zaagency@gmail.com</p>
+                            }}>zena.alsibaai@gmail.com</p>
                             </CopyToClipboard>      
                         </div> 
                     </div>
                     <SocialNetwork />
                     <div className="credits">
-                        <p>ZA Agency - 2021</p>
+                        <p>ZA - 2021</p>
                     </div>
                 </div>
                 <ButtonsBottom left ={'/project-5'}/>

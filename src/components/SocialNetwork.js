@@ -1,4 +1,5 @@
 import React from 'react';
+import CopyToClipboard from 'react-copy-to-clipboard';
 
 const SocialNetwork = () => {
     const anim= () =>{
@@ -20,21 +21,29 @@ const SocialNetwork = () => {
     return (
         <div className="social-network">
             <ul className="content">
-                <a href="https://www.linkedin.com" target="blank" rel="noopener noreferrer" className="hover" onMouseOver={anim}>
+                <a href="https://linkedin.com/in/zena-alsibaai" target="blank"  className="hover" onMouseOver={anim}>
                 <li><i class="fab fa-linkedin-in"></i></li>
                 </a>
 
-                <a href="https://www.linkedin.com" target="blank" rel="noopener noreferrer" className="hover" onMouseOver={anim}>
+                <a href="https://github.com/Zena-Alsibaai" target="blank"  className="hover" onMouseOver={anim}>
                 <li><i class="fab fa-github"></i></li>
                 </a>
 
-                <a href="https://www.linkedin.com" target="blank" rel="noopener noreferrer" className="hover" onMouseOver={anim}>
-                <i class="fas fa-envelope-open-text"></i>
-                </a>
+                <CopyToClipboard text="zena.alsibaai@gmail.com" className="hover" onMouseOver={anim}>
+                    <a  style={{cursor: "pointer"}} className="clipboard" onClick={() => {
+                             alert("Email copié !")
+                            }}>
+                        <i class="fas fa-envelope-open-text"></i>
+                       </a>
+                 </CopyToClipboard> 
 
-                <a href="https://www.linkedin.com" target="blank" rel="noopener noreferrer" className="hover" onMouseOver={anim}>
-                <i class="fas fa-mobile-alt"></i>
-                </a>
+                <CopyToClipboard text="0465 790 799" className="hover" onMouseOver={anim}>
+                    <a   style={{cursor: "pointer"}} className="clipboard" onClick={() => {
+                            alert("Téléphone copié !")
+                                }}>
+                        <i class="fas fa-mobile-alt"></i>
+                       </a>
+                </CopyToClipboard> 
             </ul>
         </div>
     )
