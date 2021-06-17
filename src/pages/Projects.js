@@ -40,7 +40,7 @@ export const Project3 = () => {
             <div className="project">
             <Navigation/>
             <Logo/>
-            <Project projectNumber={3} />
+            <Project projectNumber={2} />
                 <ButtonsBottom left={'/project-2'} right={'/project-4'}/>
             </div>
         </main>
@@ -56,6 +56,20 @@ export const Project4 = () => {
             <Logo/>
             <Project projectNumber={3} />
                 <ButtonsBottom left={'/project-3'} right={'/contact'}/>
+            </div>
+        </main>
+    )
+}
+
+export const Project5 = () => {
+    return (
+        <main>
+            <Mouse/>
+            <div className="project">
+            <Navigation/>
+            <Logo/>
+            <Project projectNumber={4} />
+                <ButtonsBottom left={'/project-4'} right={'/contact'}/>
             </div>
         </main>
     )

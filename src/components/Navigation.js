@@ -24,6 +24,9 @@ const Navigation = () => {
                         <NavLink to='/project-4' activeClassName='nav-active' className='hover'>
                             <li>Project 4</li>
                         </NavLink>
+                          <NavLink to='/project-5' activeClassName='nav-active' className='hover'>
+                            <li>Project 5</li>
+                        </NavLink>
                     </ul>
                 </li>
                 {/*===== Vers La Page Contact =====*/}

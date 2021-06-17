@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom'
 import Home from './pages/Home';
-import  { Project1, Project2, Project3, Project4 } from './pages/Projects';
+import  { Project1, Project2, Project3, Project4, Project5 } from './pages/Projects';
 import Contact from './pages/Contact';
 
 const App = () => {
@@ -12,6 +12,7 @@ const App = () => {
             <Route exact path='/project-2' component={Project2} />
             <Route exact path='/project-3' component={Project3} />
             <Route exact path='/project-4' component={Project4} />
+            <Route exact path='/project-5' component={Project5} />
             <Route exact path='/contact' component={Contact} />
             <Redirect to='/' />
         </Switch>
